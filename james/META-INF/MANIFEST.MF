@@ -1,0 +1,438 @@
+Manifest-Version: 1.0
+Created-By: Maven JAR Plugin 3.4.2
+Build-Jdk-Spec: 25
+Class-Path: james-server-postgres-app.lib/james-core-3.10.0-SNAPSHOT.jar
+  james-server-postgres-app.lib/commons-io-2.19.0.jar james-server-postg
+ res-app.lib/reactive-streams-1.0.4.jar james-server-postgres-app.lib/ja
+ mes-server-util-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/react
+ or-core-3.7.19.jar james-server-postgres-app.lib/jackson-databind-2.19.
+ 1.jar james-server-postgres-app.lib/jackson-annotations-2.19.1.jar jame
+ s-server-postgres-app.lib/jackson-core-2.19.1.jar james-server-postgres
+ -app.lib/throwing-lambdas-0.5.0.jar james-server-postgres-app.lib/commo
+ ns-codec-1.18.0.jar james-server-postgres-app.lib/feign-core-13.6.jar j
+ ames-server-postgres-app.lib/feign-slf4j-13.6.jar james-server-postgres
+ -app.lib/jakarta.annotation-api-2.1.1.jar james-server-postgres-app.lib
+ /commons-configuration2-2.15.0.jar james-server-postgres-app.lib/common
+ s-text-1.15.0.jar james-server-postgres-app.lib/log4j-to-slf4j-2.25.4.j
+ ar james-server-postgres-app.lib/log4j-api-2.25.4.jar james-server-post
+ gres-app.lib/opensearch-java-2.25.0.jar james-server-postgres-app.lib/c
+ ommons-logging-1.3.5.jar james-server-postgres-app.lib/jsr305-3.0.2.jar
+  james-server-postgres-app.lib/parsson-1.1.6.jar james-server-postgres-
+ app.lib/jakarta.json-api-2.1.3.jar james-server-postgres-app.lib/jakart
+ a.json.bind-api-2.0.0.jar james-server-postgres-app.lib/httpclient5-5.4
+ .4.jar james-server-postgres-app.lib/httpcore5-5.3.4.jar james-server-p
+ ostgres-app.lib/httpcore5-h2-5.3.4.jar james-server-postgres-app.lib/ya
+ sson-2.0.2.jar james-server-postgres-app.lib/jakarta.json-2.0.0-module.
+ jar james-server-postgres-app.lib/opensearch-rest-client-2.19.2.jar jam
+ es-server-postgres-app.lib/httpasyncclient-4.1.5.jar james-server-postg
+ res-app.lib/httpcore-nio-4.4.16.jar james-server-postgres-app.lib/log4j
+ -over-slf4j-2.0.17.jar james-server-postgres-app.lib/slf4j-api-2.0.17.j
+ ar james-server-postgres-app.lib/james-server-lifecycle-api-3.10.0-SNAP
+ SHOT.jar james-server-postgres-app.lib/metrics-api-3.10.0-SNAPSHOT.jar 
+ james-server-postgres-app.lib/r2dbc-pool-1.0.1.RELEASE.jar james-server
+ -postgres-app.lib/r2dbc-spi-1.0.0.RELEASE.jar james-server-postgres-app
+ .lib/jakarta.inject-api-2.0.1.jar james-server-postgres-app.lib/jooq-3.
+ 20.5.jar james-server-postgres-app.lib/jooq-postgres-extensions-3.20.5.
+ jar james-server-postgres-app.lib/postgresql-42.7.5.jar james-server-po
+ stgres-app.lib/checker-qual-3.48.3.jar james-server-postgres-app.lib/r2
+ dbc-postgresql-1.0.7.RELEASE.jar james-server-postgres-app.lib/client-2
+ .1.jar james-server-postgres-app.lib/common-2.1.jar james-server-postgr
+ es-app.lib/saslprep-1.1.jar james-server-postgres-app.lib/stringprep-1.
+ 1.jar james-server-postgres-app.lib/reactor-netty-core-1.2.18.jar james
+ -server-postgres-app.lib/netty-handler-proxy-4.1.135.Final.jar james-se
+ rver-postgres-app.lib/netty-codec-socks-4.1.135.Final.jar james-server-
+ postgres-app.lib/netty-resolver-dns-native-macos-4.1.135.Final-osx-x86_
+ 64.jar james-server-postgres-app.lib/netty-resolver-dns-classes-macos-4
+ .1.135.Final.jar james-server-postgres-app.lib/netty-transport-native-e
+ poll-4.1.135.Final-linux-x86_64.jar james-server-postgres-app.lib/guava
+ -33.4.8-jre.jar james-server-postgres-app.lib/failureaccess-1.0.3.jar j
+ ames-server-postgres-app.lib/listenablefuture-9999.0-empty-to-avoid-con
+ flict-with-guava.jar james-server-postgres-app.lib/jspecify-1.0.0.jar j
+ ames-server-postgres-app.lib/error_prone_annotations-2.36.0.jar james-s
+ erver-postgres-app.lib/j2objc-annotations-3.0.0.jar james-server-postgr
+ es-app.lib/amqp-client-5.34.0.jar james-server-postgres-app.lib/netty-t
+ ransport-4.1.135.Final.jar james-server-postgres-app.lib/feign-jackson-
+ 13.6.jar james-server-postgres-app.lib/reactor-pool-1.1.9.jar james-ser
+ ver-postgres-app.lib/reactor-rabbitmq-1.5.6.jar james-server-postgres-a
+ pp.lib/httpclient-4.5.14.jar james-server-postgres-app.lib/httpcore-4.4
+ .16.jar james-server-postgres-app.lib/apache-james-backends-opensearch-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache-james-mailbox-
+ api-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/event-bus-api-3.1
+ 0.0-SNAPSHOT.jar james-server-postgres-app.lib/re2j-1.8.jar james-serve
+ r-postgres-app.lib/apache-james-mailbox-store-3.10.0-SNAPSHOT.jar james
+ -server-postgres-app.lib/apache-mime4j-core-0.8.15.jar james-server-pos
+ tgres-app.lib/jsoup-1.23.1.jar james-server-postgres-app.lib/jackson-da
+ tatype-guava-2.19.1.jar james-server-postgres-app.lib/jackson-datatype-
+ jdk8-2.19.1.jar james-server-postgres-app.lib/jakarta.mail-2.0.3.jar ja
+ mes-server-postgres-app.lib/jakarta.activation-api-2.1.3.jar james-serv
+ er-postgres-app.lib/angus-activation-2.0.2.jar james-server-postgres-ap
+ p.lib/apache-james-backends-postgres-3.10.0-SNAPSHOT.jar james-server-p
+ ostgres-app.lib/apache-james-mailbox-event-json-3.10.0-SNAPSHOT.jar jam
+ es-server-postgres-app.lib/enumeratum_2.13-1.9.0.jar james-server-postg
+ res-app.lib/enumeratum-macros_2.13-1.9.0.jar james-server-postgres-app.
+ lib/shapeless_2.13-2.3.13.jar james-server-postgres-app.lib/play-json_2
+ .13-2.10.6.jar james-server-postgres-app.lib/play-functional_2.13-2.10.
+ 6.jar james-server-postgres-app.lib/scala-reflect-2.13.14.jar james-ser
+ ver-postgres-app.lib/play-json-derived-codecs_2.13-11.0.0.jar james-ser
+ ver-postgres-app.lib/play-json_2.13-3.0.1.jar james-server-postgres-app
+ .lib/play-functional_2.13-3.0.1.jar james-server-postgres-app.lib/blob-
+ api-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/uuid-creator-6.1.
+ 1.jar james-server-postgres-app.lib/jasypt-1.9.3.jar james-server-postg
+ res-app.lib/apache-james-mailbox-quota-search-scanning-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/apache-james-mailbox-quota-search-3.1
+ 0.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-data-api-3.
+ 10.0-SNAPSHOT.jar james-server-postgres-app.lib/caffeine-3.2.1.jar jame
+ s-server-postgres-app.lib/reactor-netty-1.2.18.jar james-server-postgre
+ s-app.lib/reactor-netty-http-1.2.18.jar james-server-postgres-app.lib/c
+ ommons-lang3-3.18.0.jar james-server-postgres-app.lib/fluent-hc-4.5.14.
+ jar james-server-postgres-app.lib/jcl-over-slf4j-2.0.17.jar james-serve
+ r-postgres-app.lib/netty-codec-4.1.135.Final.jar james-server-postgres-
+ app.lib/netty-common-4.1.135.Final.jar james-server-postgres-app.lib/ne
+ tty-buffer-4.1.135.Final.jar james-server-postgres-app.lib/netty-codec-
+ http-4.1.135.Final.jar james-server-postgres-app.lib/netty-codec-http2-
+ 4.1.135.Final.jar james-server-postgres-app.lib/netty-handler-4.1.135.F
+ inal.jar james-server-postgres-app.lib/netty-resolver-4.1.135.Final.jar
+  james-server-postgres-app.lib/netty-transport-native-unix-common-4.1.1
+ 35.Final.jar james-server-postgres-app.lib/netty-resolver-dns-4.1.135.F
+ inal.jar james-server-postgres-app.lib/netty-codec-dns-4.1.135.Final.ja
+ r james-server-postgres-app.lib/reactor-extra-3.5.5.jar james-server-po
+ stgres-app.lib/netty-nio-client-2.48.4.jar james-server-postgres-app.li
+ b/annotations-2.48.4.jar james-server-postgres-app.lib/http-client-spi-
+ 2.48.4.jar james-server-postgres-app.lib/utils-2.48.4.jar james-server-
+ postgres-app.lib/metrics-spi-2.48.4.jar james-server-postgres-app.lib/n
+ etty-transport-classes-epoll-4.1.135.Final.jar james-server-postgres-ap
+ p.lib/s3-2.48.4.jar james-server-postgres-app.lib/aws-xml-protocol-2.48
+ .4.jar james-server-postgres-app.lib/aws-query-protocol-2.48.4.jar jame
+ s-server-postgres-app.lib/protocol-core-2.48.4.jar james-server-postgre
+ s-app.lib/arns-2.48.4.jar james-server-postgres-app.lib/profiles-2.48.4
+ .jar james-server-postgres-app.lib/crt-core-2.48.4.jar james-server-pos
+ tgres-app.lib/http-auth-2.48.4.jar james-server-postgres-app.lib/identi
+ ty-spi-2.48.4.jar james-server-postgres-app.lib/http-auth-spi-2.48.4.ja
+ r james-server-postgres-app.lib/http-auth-aws-2.48.4.jar james-server-p
+ ostgres-app.lib/checksums-2.48.4.jar james-server-postgres-app.lib/chec
+ ksums-spi-2.48.4.jar james-server-postgres-app.lib/retries-spi-2.48.4.j
+ ar james-server-postgres-app.lib/sdk-core-2.48.4.jar james-server-postg
+ res-app.lib/retries-2.48.4.jar james-server-postgres-app.lib/auth-2.48.
+ 4.jar james-server-postgres-app.lib/http-auth-aws-eventstream-2.48.4.ja
+ r james-server-postgres-app.lib/eventstream-1.0.1.jar james-server-post
+ gres-app.lib/regions-2.48.4.jar james-server-postgres-app.lib/aws-core-
+ 2.48.4.jar james-server-postgres-app.lib/utils-lite-2.48.4.jar james-se
+ rver-postgres-app.lib/json-utils-2.48.4.jar james-server-postgres-app.l
+ ib/third-party-jackson-core-2.48.4.jar james-server-postgres-app.lib/en
+ dpoints-spi-2.48.4.jar james-server-postgres-app.lib/apache5-client-2.4
+ 8.4.jar james-server-postgres-app.lib/blob-api-guice-3.10.0-SNAPSHOT.ja
+ r james-server-postgres-app.lib/blob-s3-3.10.0-SNAPSHOT.jar james-serve
+ r-postgres-app.lib/james-server-guice-configuration-3.10.0-SNAPSHOT.jar
+  james-server-postgres-app.lib/bcpkix-jdk18on-1.82.jar james-server-pos
+ tgres-app.lib/bcutil-jdk18on-1.82.jar james-server-postgres-app.lib/bcp
+ rov-jdk18on-1.82.jar james-server-postgres-app.lib/event-sourcing-event
+ -store-api-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/event-sour
+ cing-pojo-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-json-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/reactor-scala-extensi
+ ons_2.13-0.8.0.jar james-server-postgres-app.lib/scala-library-2.13.16.
+ jar james-server-postgres-app.lib/scala-java8-compat_2.13-1.0.2.jar jam
+ es-server-postgres-app.lib/james-server-cli-3.10.0-SNAPSHOT.jar james-s
+ erver-postgres-app.lib/james-server-mailbox-jmx-3.10.0-SNAPSHOT.jar jam
+ es-server-postgres-app.lib/commons-cli-1.9.0.jar james-server-postgres-
+ app.lib/james-server-data-jmap-postgres-3.10.0-SNAPSHOT.jar james-serve
+ r-postgres-app.lib/apache-james-mailbox-postgres-3.10.0-SNAPSHOT.jar ja
+ mes-server-postgres-app.lib/event-sourcing-event-store-postgres-3.10.0-
+ SNAPSHOT.jar james-server-postgres-app.lib/james-server-data-jmap-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/event-sourcing-core-3.10.0
+ -SNAPSHOT.jar james-server-postgres-app.lib/apps-webpush-1.12.2.jar jam
+ es-server-postgres-app.lib/tink-1.17.0.jar james-server-postgres-app.li
+ b/refined_2.13-0.11.3.jar james-server-postgres-app.lib/scala-compiler-
+ 2.13.15.jar james-server-postgres-app.lib/java-diff-utils-4.12.jar jame
+ s-server-postgres-app.lib/jline-3.26.3.jar james-server-postgres-app.li
+ b/commons-collections4-4.5.0.jar james-server-postgres-app.lib/james-se
+ rver-data-library-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/unb
+ oundid-ldapsdk-7.0.3.jar james-server-postgres-app.lib/commons-beanutil
+ s-1.11.0.jar james-server-postgres-app.lib/commons-collections-3.2.2.ja
+ r james-server-postgres-app.lib/james-server-data-postgres-3.10.0-SNAPS
+ HOT.jar james-server-postgres-app.lib/james-server-core-3.10.0-SNAPSHOT
+ .jar james-server-postgres-app.lib/james-server-dnsservice-api-3.10.0-S
+ NAPSHOT.jar james-server-postgres-app.lib/james-server-mail-store-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/blob-common-3.10.0-SNAPSHO
+ T.jar james-server-postgres-app.lib/james-server-mailrepository-api-3.1
+ 0.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice-commo
+ n-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-data-m
+ emory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-dn
+ sservice-dnsjava-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/dnsj
+ ava-3.6.3.jar james-server-postgres-app.lib/james-server-filesystem-api
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice-m
+ ailet-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache-mailet-a
+ mqp-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/metrics-tests-3.1
+ 0.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-mailet-dkim
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/fastutil-core-8.5.15
+ .jar james-server-postgres-app.lib/apache-jdkim-library-0.5.jar james-s
+ erver-postgres-app.lib/james-server-guice-netty-3.10.0-SNAPSHOT.jar jam
+ es-server-postgres-app.lib/protocols-netty-3.10.0-SNAPSHOT.jar james-se
+ rver-postgres-app.lib/netty-codec-haproxy-4.1.135.Final.jar james-serve
+ r-postgres-app.lib/james-server-guice-utils-3.10.0-SNAPSHOT.jar james-s
+ erver-postgres-app.lib/james-server-mailrepository-memory-3.10.0-SNAPSH
+ OT.jar james-server-postgres-app.lib/james-server-onami-3.10.0-SNAPSHOT
+ .jar james-server-postgres-app.lib/james-server-protocols-library-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/ayza-for-pem-10.0.0.jar ja
+ mes-server-postgres-app.lib/ayza-10.0.0.jar james-server-postgres-app.l
+ ib/james-server-queue-api-3.10.0-SNAPSHOT.jar james-server-postgres-app
+ .lib/threeten-extra-1.8.0.jar james-server-postgres-app.lib/james-serve
+ r-task-json-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-ser
+ ver-task-memory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/mailr
+ epository-loaders-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/met
+ rics-dropwizard-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/metri
+ cs-core-4.2.32.jar james-server-postgres-app.lib/metrics-jmx-4.2.32.jar
+  james-server-postgres-app.lib/metrics-jvm-4.2.32.jar james-server-post
+ gres-app.lib/hdrhistogram-metrics-reservoir-1.1.3.jar james-server-post
+ gres-app.lib/HdrHistogram-2.1.12.jar james-server-postgres-app.lib/prot
+ ocols-api-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/guice-7.0.0
+ .jar james-server-postgres-app.lib/aopalliance-1.0.jar james-server-pos
+ tgres-app.lib/james-server-guice-data-ldap-3.10.0-SNAPSHOT.jar james-se
+ rver-postgres-app.lib/james-server-data-ldap-3.10.0-SNAPSHOT.jar james-
+ server-postgres-app.lib/james-server-guice-data-redis-3.10.0-SNAPSHOT.j
+ ar james-server-postgres-app.lib/apache-james-backends-redis-3.10.0-SNA
+ PSHOT.jar james-server-postgres-app.lib/lettuce-core-6.8.2.RELEASE.jar 
+ james-server-postgres-app.lib/redis-authx-core-0.1.1-beta2.jar james-se
+ rver-postgres-app.lib/netty-transport-native-epoll-4.1.135.Final.jar ja
+ mes-server-postgres-app.lib/james-server-data-redis-3.10.0-SNAPSHOT.jar
+  james-server-postgres-app.lib/james-server-guice-distributed-3.10.0-SN
+ APSHOT.jar james-server-postgres-app.lib/apache-james-mailbox-tools-quo
+ ta-recompute-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-aes
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-deduplication-g
+ c-guice-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache-james-
+ mailbox-cassandra-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blo
+ b-memory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-storage
+ -strategy-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-file-3
+ .10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-postgres-guice-3.
+ 10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-postgres-3.10.0-SN
+ APSHOT.jar james-server-postgres-app.lib/blob-s3-guice-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/blob-zstd-3.10.0-SNAPSHOT.jar james-s
+ erver-postgres-app.lib/zstd-jni-1.5.7-7.jar james-server-postgres-app.l
+ ib/event-bus-distributed-3.10.0-SNAPSHOT.jar james-server-postgres-app.
+ lib/james-server-guice-cassandra-3.10.0-SNAPSHOT.jar james-server-postg
+ res-app.lib/apache-james-mailbox-deleted-messages-vault-cassandra-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/blob-cassandra-3.10.0-SNAP
+ SHOT.jar james-server-postgres-app.lib/data-cassandra-3.10.0-SNAPSHOT.j
+ ar james-server-postgres-app.lib/dead-letter-cassandra-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/event-sourcing-event-store-cassandra-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-data-cas
+ sandra-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-d
+ ata-jmap-cassandra-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/ja
+ mes-server-mailrepository-cassandra-3.10.0-SNAPSHOT.jar james-server-po
+ stgres-app.lib/james-server-webadmin-cassandra-3.10.0-SNAPSHOT.jar jame
+ s-server-postgres-app.lib/james-server-webadmin-cassandra-data-3.10.0-S
+ NAPSHOT.jar james-server-postgres-app.lib/mailrepository-cassandra-3.10
+ .0-SNAPSHOT.jar james-server-postgres-app.lib/quota-mailing-cassandra-3
+ .10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-jmap-3.10
+ .0-SNAPSHOT.jar james-server-postgres-app.lib/micrometer-core-1.15.1.ja
+ r james-server-postgres-app.lib/micrometer-commons-1.15.1.jar james-ser
+ ver-postgres-app.lib/micrometer-observation-1.15.1.jar james-server-pos
+ tgres-app.lib/LatencyUtils-2.0.3.jar james-server-postgres-app.lib/micr
+ ometer-tracing-1.5.1.jar james-server-postgres-app.lib/context-propagat
+ ion-1.1.3.jar james-server-postgres-app.lib/james-server-jmap-rfc-8621-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/commons-fileupload-1.
+ 6.0.jar james-server-postgres-app.lib/cats-core_2.13-2.13.0.jar james-s
+ erver-postgres-app.lib/cats-kernel_2.13-2.13.0.jar james-server-postgre
+ s-app.lib/james-server-task-distributed-3.10.0-SNAPSHOT.jar james-serve
+ r-postgres-app.lib/apache-james-backends-cassandra-3.10.0-SNAPSHOT.jar 
+ james-server-postgres-app.lib/future-converter-java8-guava-1.2.0.jar ja
+ mes-server-postgres-app.lib/future-converter-common-1.2.0.jar james-ser
+ ver-postgres-app.lib/future-converter-java8-common-1.2.0.jar james-serv
+ er-postgres-app.lib/future-converter-guava-common-1.2.0.jar james-serve
+ r-postgres-app.lib/java-driver-core-4.19.3.jar james-server-postgres-ap
+ p.lib/native-protocol-1.5.2.jar james-server-postgres-app.lib/java-driv
+ er-guava-shaded-4.19.3.jar james-server-postgres-app.lib/config-1.4.1.j
+ ar james-server-postgres-app.lib/jnr-posix-3.1.15.jar james-server-post
+ gres-app.lib/jnr-ffi-2.2.11.jar james-server-postgres-app.lib/jffi-1.3.
+ 9.jar james-server-postgres-app.lib/jffi-1.3.9-native.jar james-server-
+ postgres-app.lib/asm-analysis-9.2.jar james-server-postgres-app.lib/asm
+ -util-9.2.jar james-server-postgres-app.lib/jnr-a64asm-1.0.0.jar james-
+ server-postgres-app.lib/jnr-x86asm-1.0.2.jar james-server-postgres-app.
+ lib/jnr-constants-0.10.3.jar james-server-postgres-app.lib/java-driver-
+ query-builder-4.19.3.jar james-server-postgres-app.lib/james-server-web
+ admin-rabbitmq-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/queue-
+ rabbitmq-guice-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-
+ server-guice-imap-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/jam
+ es-server-protocols-imap4-3.10.0-SNAPSHOT.jar james-server-postgres-app
+ .lib/protocols-imap-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/j
+ utf7-1.0.0.jar james-server-postgres-app.lib/protocols-sasl-3.10.0-SNAP
+ SHOT.jar james-server-postgres-app.lib/apache-mailet-base-3.10.0-SNAPSH
+ OT.jar james-server-postgres-app.lib/javax-mail-extension-3.10.0-SNAPSH
+ OT.jar james-server-postgres-app.lib/james-server-guice-jmx-3.10.0-SNAP
+ SHOT.jar james-server-postgres-app.lib/apache-james-mailbox-tools-copie
+ r-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache-james-mailbo
+ x-tools-indexer-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/vavr-
+ 0.10.6.jar james-server-postgres-app.lib/vavr-match-0.10.6.jar james-se
+ rver-postgres-app.lib/james-server-mailetcontainer-api-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/james-server-mailetcontainer-impl-3.1
+ 0.0-SNAPSHOT.jar james-server-postgres-app.lib/jaxb-core-4.0.5.jar jame
+ s-server-postgres-app.lib/jakarta.xml.bind-api-4.0.2.jar james-server-p
+ ostgres-app.lib/jaxb-impl-4.0.5.jar james-server-postgres-app.lib/jaxb-
+ api-2.4.0-b180830.0359.jar james-server-postgres-app.lib/javax.activati
+ on-api-1.2.0.jar james-server-postgres-app.lib/james-server-guice-lmtp-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-protocol
+ s-lmtp-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/protocols-lmtp
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/protocols-smtp-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice-mailbox
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/event-bus-in-vm-3.10
+ .0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-feature-chec
+ ks-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice
+ -mailbox-postgres-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apa
+ che-james-mailbox-deleted-messages-vault-postgres-3.10.0-SNAPSHOT.jar j
+ ames-server-postgres-app.lib/apache-james-mailbox-deleted-messages-vaul
+ t-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/blob-memory-guice-3
+ .10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-mailbox-p
+ lugin-deleted-messages-vault-guice-3.10.0-SNAPSHOT.jar james-server-pos
+ tgres-app.lib/james-server-webadmin-mailbox-deleted-message-vault-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice-managed
+ sieve-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-pr
+ otocols-managesieve-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/p
+ rotocols-managesieve-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/
+ apache-jsieve-core-0.8.jar james-server-postgres-app.lib/james-server-g
+ uice-memory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache-ja
+ mes-mailbox-memory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/ap
+ ache-james-mailbox-quota-mailing-3.10.0-SNAPSHOT.jar james-server-postg
+ res-app.lib/compiler-0.9.14.jar james-server-postgres-app.lib/apache-ma
+ ilet-icalendar-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/ical4j
+ -4.2.5.jar james-server-postgres-app.lib/blob-export-guice-3.10.0-SNAPS
+ HOT.jar james-server-postgres-app.lib/blob-export-api-3.10.0-SNAPSHOT.j
+ ar james-server-postgres-app.lib/blob-export-file-3.10.0-SNAPSHOT.jar j
+ ames-server-postgres-app.lib/james-server-guice-jmap-3.10.0-SNAPSHOT.ja
+ r james-server-postgres-app.lib/james-server-guice-lucene-3.10.0-SNAPSH
+ OT.jar james-server-postgres-app.lib/apache-james-mailbox-lucene-3.10.0
+ -SNAPSHOT.jar james-server-postgres-app.lib/lucene-analysis-common-10.2
+ .1.jar james-server-postgres-app.lib/lucene-core-10.2.1.jar james-serve
+ r-postgres-app.lib/lucene-grouping-10.2.1.jar james-server-postgres-app
+ .lib/lucene-queries-10.2.1.jar james-server-postgres-app.lib/lucene-hig
+ hlighter-10.2.1.jar james-server-postgres-app.lib/lucene-memory-10.2.1.
+ jar james-server-postgres-app.lib/lucene-misc-10.2.1.jar james-server-p
+ ostgres-app.lib/lucene-queryparser-10.2.1.jar james-server-postgres-app
+ .lib/lucene-sandbox-10.2.1.jar james-server-postgres-app.lib/lucene-fac
+ et-10.2.1.jar james-server-postgres-app.lib/james-server-guice-sieve-fi
+ le-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/queue-memory-guice
+ -3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-queue-m
+ emory-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-gu
+ ice-opensearch-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/apache
+ -james-mailbox-opensearch-3.10.0-SNAPSHOT.jar james-server-postgres-app
+ .lib/apache-james-mailbox-quota-search-opensearch-3.10.0-SNAPSHOT.jar j
+ ames-server-postgres-app.lib/apache-james-mailbox-tika-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/james-server-guice-pop-3.10.0-SNAPSHO
+ T.jar james-server-postgres-app.lib/james-server-protocols-pop3-3.10.0-
+ SNAPSHOT.jar james-server-postgres-app.lib/protocols-pop3-3.10.0-SNAPSH
+ OT.jar james-server-postgres-app.lib/james-server-guice-sieve-postgres-
+ 3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice-sm
+ tp-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-proto
+ cols-smtp-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-serve
+ r-guice-webadmin-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/jame
+ s-server-webadmin-core-3.10.0-SNAPSHOT.jar james-server-postgres-app.li
+ b/james-server-webadmin-dropwizard-metrics-3.10.0-SNAPSHOT.jar james-se
+ rver-postgres-app.lib/simpleclient_dropwizard-0.16.0.jar james-server-p
+ ostgres-app.lib/simpleclient-0.16.0.jar james-server-postgres-app.lib/s
+ impleclient_tracer_otel-0.16.0.jar james-server-postgres-app.lib/simple
+ client_tracer_common-0.16.0.jar james-server-postgres-app.lib/simplecli
+ ent_tracer_otel_agent-0.16.0.jar james-server-postgres-app.lib/simplecl
+ ient_servlet-0.16.0.jar james-server-postgres-app.lib/simpleclient_comm
+ on-0.16.0.jar james-server-postgres-app.lib/simpleclient_servlet_common
+ -0.16.0.jar james-server-postgres-app.lib/james-server-webadmin-protoco
+ ls-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-guice
+ -webadmin-data-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-
+ server-webadmin-data-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/
+ james-server-guice-webadmin-jmap-3.10.0-SNAPSHOT.jar james-server-postg
+ res-app.lib/james-server-webadmin-jmap-3.10.0-SNAPSHOT.jar james-server
+ -postgres-app.lib/james-server-webadmin-mailbox-3.10.0-SNAPSHOT.jar jam
+ es-server-postgres-app.lib/backup-3.10.0-SNAPSHOT.jar james-server-post
+ gres-app.lib/james-server-guice-webadmin-mailbox-3.10.0-SNAPSHOT.jar ja
+ mes-server-postgres-app.lib/james-server-guice-webadmin-mailqueue-3.10.
+ 0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-webadmin-mail
+ queue-3.10.0-SNAPSHOT.jar james-server-postgres-app.lib/james-server-gu
+ ice-webadmin-mailrepository-3.10.0-SNAPSHOT.jar james-server-postgres-a
+ pp.lib/james-server-webadmin-mailrepository-3.10.0-SNAPSHOT.jar james-s
+ erver-postgres-app.lib/james-server-mailbox-adapter-3.10.0-SNAPSHOT.jar
+  james-server-postgres-app.lib/james-server-mailets-3.10.0-SNAPSHOT.jar
+  james-server-postgres-app.lib/apache-mailet-api-3.10.0-SNAPSHOT.jar ja
+ mes-server-postgres-app.lib/apache-mailet-standard-3.10.0-SNAPSHOT.jar 
+ james-server-postgres-app.lib/james-mdn-3.10.0-SNAPSHOT.jar james-serve
+ r-postgres-app.lib/parboiled_2.13-2.5.1.jar james-server-postgres-app.l
+ ib/james-server-dnsservice-library-3.10.0-SNAPSHOT.jar james-server-pos
+ tgres-app.lib/byteunits-0.9.1.jar james-server-postgres-app.lib/commons
+ -pool2-2.12.1.jar james-server-postgres-app.lib/apache-mime4j-dom-0.8.1
+ 5.jar james-server-postgres-app.lib/apache-mime4j-james-utils-0.8.15.ja
+ r james-server-postgres-app.lib/apache-jspf-resolver-1.0.5.jar james-se
+ rver-postgres-app.lib/james-server-postgres-common-guice-3.10.0-SNAPSHO
+ T.jar james-server-postgres-app.lib/dead-letter-postgres-3.10.0-SNAPSHO
+ T.jar james-server-postgres-app.lib/james-server-data-file-3.10.0-SNAPS
+ HOT.jar james-server-postgres-app.lib/james-server-task-postgres-3.10.0
+ -SNAPSHOT.jar james-server-postgres-app.lib/asm-9.3.jar james-server-po
+ stgres-app.lib/commons-compress-1.27.1.jar james-server-postgres-app.li
+ b/jna-5.18.1.jar james-server-postgres-app.lib/james-server-jwt-3.10.0-
+ SNAPSHOT.jar james-server-postgres-app.lib/jwks-rsa-0.22.1.jar james-se
+ rver-postgres-app.lib/jjwt-api-0.12.6.jar james-server-postgres-app.lib
+ /jjwt-impl-0.12.6.jar james-server-postgres-app.lib/jjwt-jackson-0.12.6
+ .jar james-server-postgres-app.lib/james-server-task-api-3.10.0-SNAPSHO
+ T.jar james-server-postgres-app.lib/jackson-datatype-jsr310-2.19.1.jar 
+ james-server-postgres-app.lib/javax.ws.rs-api-2.1.1.jar james-server-po
+ stgres-app.lib/spark-core-3.0.4.jar james-server-postgres-app.lib/jetty
+ -server-12.1.7.jar james-server-postgres-app.lib/jetty-http-12.1.7.jar 
+ james-server-postgres-app.lib/jetty-util-12.1.7.jar james-server-postgr
+ es-app.lib/jetty-io-12.1.7.jar james-server-postgres-app.lib/jetty-http
+ 2-server-12.1.7.jar james-server-postgres-app.lib/jetty-http2-common-12
+ .1.7.jar james-server-postgres-app.lib/jetty-http2-hpack-12.1.7.jar jam
+ es-server-postgres-app.lib/jetty-ee10-servlet-12.1.7.jar james-server-p
+ ostgres-app.lib/jakarta.servlet-api-6.0.0.jar james-server-postgres-app
+ .lib/jetty-security-12.1.7.jar james-server-postgres-app.lib/jetty-sess
+ ion-12.1.7.jar james-server-postgres-app.lib/jetty-ee10-webapp-12.1.7.j
+ ar james-server-postgres-app.lib/jetty-xml-12.1.7.jar james-server-post
+ gres-app.lib/jetty-ee-webapp-12.1.7.jar james-server-postgres-app.lib/j
+ etty-websocket-jetty-server-12.1.7.jar james-server-postgres-app.lib/je
+ tty-websocket-core-server-12.1.7.jar james-server-postgres-app.lib/jett
+ y-websocket-core-common-12.1.7.jar james-server-postgres-app.lib/jetty-
+ websocket-jetty-common-12.1.7.jar james-server-postgres-app.lib/jetty-e
+ e10-websocket-servlet-12.1.7.jar james-server-postgres-app.lib/jetty-ee
+ 10-websocket-jetty-server-12.1.7.jar james-server-postgres-app.lib/jett
+ y-ee10-annotations-12.1.7.jar james-server-postgres-app.lib/jetty-annot
+ ations-12.1.7.jar james-server-postgres-app.lib/jetty-ee10-plus-12.1.7.
+ jar james-server-postgres-app.lib/jakarta.enterprise.cdi-api-4.0.1.jar 
+ james-server-postgres-app.lib/jakarta.enterprise.lang-model-4.0.1.jar j
+ ames-server-postgres-app.lib/jakarta.interceptor-api-2.1.0.jar james-se
+ rver-postgres-app.lib/jetty-jndi-12.1.7.jar james-server-postgres-app.l
+ ib/jetty-plus-12.1.7.jar james-server-postgres-app.lib/asm-commons-9.9.
+ 1.jar james-server-postgres-app.lib/asm-tree-9.9.1.jar james-server-pos
+ tgres-app.lib/jetty-websocket-jetty-api-12.1.7.jar james-server-postgre
+ s-app.lib/queue-activemq-guice-3.10.0-SNAPSHOT.jar james-server-postgre
+ s-app.lib/james-server-queue-activemq-3.10.0-SNAPSHOT.jar james-server-
+ postgres-app.lib/james-server-queue-jms-3.10.0-SNAPSHOT.jar james-serve
+ r-postgres-app.lib/artemis-jakarta-client-2.56.0.jar james-server-postg
+ res-app.lib/artemis-core-client-2.56.0.jar james-server-postgres-app.li
+ b/jgroups-5.3.13.Final.jar james-server-postgres-app.lib/pem-keystore-3
+ .0.0.jar james-server-postgres-app.lib/asn-one-0.6.0.jar james-server-p
+ ostgres-app.lib/artemis-commons-2.56.0.jar james-server-postgres-app.li
+ b/artemis-selector-2.56.0.jar james-server-postgres-app.lib/jakarta.jms
+ -api-3.1.0.jar james-server-postgres-app.lib/artemis-jakarta-server-2.5
+ 6.0.jar james-server-postgres-app.lib/artemis-server-2.56.0.jar james-s
+ erver-postgres-app.lib/artemis-jdbc-store-2.56.0.jar james-server-postg
+ res-app.lib/commons-dbcp2-2.14.0.jar james-server-postgres-app.lib/arte
+ mis-lockmanager-api-2.56.0.jar james-server-postgres-app.lib/jctools-co
+ re-4.0.7.jar james-server-postgres-app.lib/snakeyaml-engine-3.1.1.jar j
+ ames-server-postgres-app.lib/nimbus-jose-jwt-10.9.1.jar james-server-po
+ stgres-app.lib/artemis-journal-2.56.0.jar james-server-postgres-app.lib
+ /activemq-artemis-native-2.0.0.jar james-server-postgres-app.lib/artemi
+ s-jakarta-service-extensions-2.56.0.jar james-server-postgres-app.lib/j
+ akarta.transaction-api-2.0.1.jar james-server-postgres-app.lib/queue-ra
+ bbitmq-guice-3.10.0-SNAPSHOT-tests.jar james-server-postgres-app.lib/ap
+ ache-james-backends-rabbitmq-3.10.0-SNAPSHOT.jar james-server-postgres-
+ app.lib/james-server-guice-webadmin-rabbitmq-mailqueue-3.10.0-SNAPSHOT.
+ jar james-server-postgres-app.lib/james-server-queue-rabbitmq-3.10.0-SN
+ APSHOT.jar james-server-postgres-app.lib/logback-classic-1.5.19.jar jam
+ es-server-postgres-app.lib/logback-core-1.5.19.jar james-server-postgre
+ s-app.lib/logback-elasticsearch-appender-1.8.0.jar james-server-postgre
+ s-app.lib/hamcrest-2.2.jar james-server-postgres-app.lib/awaitility-4.3
+ .0.jar
+Main-Class: org.apache.james.PostgresJamesServerMain
+Implementation-Title: Apache James Postgres server Application
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 3.10.0-SNAPSHOT
+Specification-Title: Apache James Postgres server Application
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 3.10.0-SNAPSHOT
+url: https://james.apache.org/server
+

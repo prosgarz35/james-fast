@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+        <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+                <resetJUL>true</resetJUL>
+        </contextListener>
+
+        <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder>
+                        <pattern>%d{HH:mm:ss.SSS} %highlight([%-5level]) %logger{15} - %msg%n%rEx</pattern>
+                        <immediateFlush>false</immediateFlush>
+                </encoder>
+        </appender>
+
+        <appender name="LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>../logs/james.log</file>
+                <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                    <fileNamePattern>../logs/james-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+                    <maxFileSize>100MB</maxFileSize>
+                    <maxHistory>14</maxHistory>
+                    <totalSizeCap>3GB</totalSizeCap>
+                </rollingPolicy>
+                <encoder>
+                        <pattern>%d{HH:mm:ss.SSS} [%-5level] %logger{25} - %msg%n%rEx</pattern>
+                        <immediateFlush>false</immediateFlush>
+                </encoder>
+        </appender>
+
+        <!-- Асинхронный логгер с буфером в памяти для файла (не блокирует потоки на I/O диска) -->
+        <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+                <queueSize>4096</queueSize>
+                <discardingThreshold>0</discardingThreshold>
+                <neverBlock>true</neverBlock>
+                <appender-ref ref="LOG_FILE" />
+        </appender>
+
+        <!-- Асинхронный логгер для консоли (полностью исключает блокировки conhost/stdout) -->
+        <appender name="ASYNC_CONSOLE" class="ch.qos.logback.classic.AsyncAppender">
+                <queueSize>2048</queueSize>
+                <discardingThreshold>0</discardingThreshold>
+                <neverBlock>true</neverBlock>
+                <appender-ref ref="CONSOLE" />
+        </appender>
+
+        <root level="WARN">
+                <appender-ref ref="ASYNC" />
+                <appender-ref ref="ASYNC_CONSOLE" />
+        </root>
+
+        <logger name="org.apache.james" level="WARN" />
+        <!-- Снижаем уровень логов аудита каждого отдельного письма при спулинге, чтобы диск не забивался миллионами строк AuditTrail -->
+        <logger name="org.apache.james.util.AuditTrail" level="WARN" />
+        <logger name="org.apache.james.transport.mailets.jsieve.delivery.SieveExecutor" level="WARN" />
+
+</configuration>
