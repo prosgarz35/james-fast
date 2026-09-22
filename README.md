@@ -8,7 +8,7 @@
 # Документация (Русская версия)
 
 ## 1. Введение и Назначение
-**Apache James Fast Edition** (`C:\soft\james_fast`) — это высокопроизводительный, полностью автономный (portable) почтовый сервер enterprise-уровня на базе **Apache James 3.10.0-SNAPSHOT** (`postgres-app`). Сервер специально модернизирован для достижения максимальной пропускной способности (>2000 msg/s) и ультранизкой задержки (<8 мс) при строгом соблюдении бюджета памяти **до 8 ГБ RAM** на 4-8 ядерных процессорах.
+**Apache James Fast Edition** — это высокопроизводительный, полностью автономный (portable) почтовый сервер enterprise-уровня на базе **Apache James 3.10.0-SNAPSHOT** (`postgres-app`). Сервер специально модернизирован для достижения максимальной пропускной способности (>2000 msg/s) и ультранизкой задержки (<8 мс) при строгом соблюдении бюджета памяти **до 8 ГБ RAM** на 4-8 ядерных процессорах.
 
 ### Ключевые преимущества сборки:
 1. **100% Автономность (Zero External Dependencies):** Не требуется установка в Windows системной Java, PostgreSQL, S3 хранилищ или дополнительных системных служб. Все бинарные файлы включены в дистрибутив и используют исключительно относительные пути.
@@ -109,7 +109,7 @@
 ## 5. Структура каталогов и назначение файлов
 
 ```text
-C:\soft\james_fast\
+.\
 ├── start.bat             # Скрипт быстрого запуска (запускает start.ps1 без консольного окна)
 ├── start.ps1             # Главный оркестратор: автоопределение CPU, настройка пулов, запуск Silo -> PG -> James
 ├── stop.bat              # Скрипт плавной остановки служб
@@ -148,10 +148,9 @@ C:\soft\james_fast\
 ## 6. Руководство по эксплуатации и команды
 
 ### 6.1. Запуск почтового сервера
-Дважды щелкните по файлу [`start.bat`](file:///C:/soft/james_fast/start.bat) либо запустите в PowerShell:
+Запустите `start.bat` либо выполните в PowerShell из корня проекта:
 ```powershell
-cd C:\soft\james_fast
-powershell -ExecutionPolicy Bypass -File start.ps1
+.\start.ps1
 ```
 Скрипт автоматически:
 1. Запустит объектное хранилище Silo S3 на порту `9000` в фоновом режиме.
@@ -173,13 +172,13 @@ Invoke-RestMethod -Uri http://127.0.0.1:8000/healthcheck | Format-List
 ### 6.3. Проведение нагрузочного тестирования
 Для запуска встроенного высоконагруженного бенчмарка (отправка 5000 писем в 16 потоков):
 ```powershell
-& "C:\soft\james_fast\soft\JRE_25\bin\java.exe" -cp tools SmtpHighLoadBenchmark 5000 16
+& ".\soft\JRE_25\bin\java.exe" -cp tools SmtpHighLoadBenchmark 5000 16
 ```
 
 ### 6.4. Корректная остановка сервера
-Для безопасного выключения запустите [`stop.bat`](file:///C:/soft/james_fast/stop.bat) либо выполните:
+Для безопасного выключения запустите `stop.bat` либо выполните:
 ```powershell
-powershell -ExecutionPolicy Bypass -File stop.ps1
+.\stop.ps1
 ```
 Скрипт проверяет состояние очереди спулера James, ожидает доставки оставшихся писем, останавливает Java, затем выполняет синхронизацию буферов PostgreSQL через `pg_ctl stop -m smart` и завершает процесс Silo S3.
 
@@ -190,7 +189,7 @@ powershell -ExecutionPolicy Bypass -File stop.ps1
 # Documentation (English Version)
 
 ## 1. Introduction & Overview
-**Apache James Fast Edition** (`C:\soft\james_fast`) is an ultra-high-performance, fully autonomous, and portable enterprise mail server built upon **Apache James 3.10.0-SNAPSHOT** (`postgres-app`). It has been extensively re-engineered to deliver peak throughput (>2000 msg/s) and sub-8ms delivery latency under a strict **8 GB RAM system ceiling** on 4 to 8 core modern CPU architectures.
+**Apache James Fast Edition** is an ultra-high-performance, fully autonomous, and portable enterprise mail server built upon **Apache James 3.10.0-SNAPSHOT** (`postgres-app`). It has been extensively re-engineered to deliver peak throughput (>2000 msg/s) and sub-8ms delivery latency under a strict **8 GB RAM system ceiling** on 4 to 8 core modern CPU architectures.
 
 ### Key Highlights:
 1. **100% Portable & Self-Contained:** Zero host dependencies. No system Java, PostgreSQL, or S3 services need to be installed in Windows. All runtime binaries are portable and leverage relative path resolution.
@@ -287,7 +286,7 @@ Verified using `SmtpHighLoadBenchmark` (5,000 messages, 16 concurrent client thr
 ## 5. Directory Structure & File Manifest
 
 ```text
-C:\soft\james_fast\
+.\
 ├── start.bat             # Fast launcher (triggers start.ps1 in hidden background mode)
 ├── start.ps1             # Main orchestrator: core detection, pool sizing, launches Silo -> PG -> James
 ├── stop.bat              # Graceful shutdown launcher
@@ -326,10 +325,9 @@ C:\soft\james_fast\
 ## 6. Operational Commands & Usage
 
 ### 6.1. Starting the Server
-Double-click [`start.bat`](file:///C:/soft/james_fast/start.bat) or run from PowerShell:
+Run `start.bat` or execute in PowerShell from the project root:
 ```powershell
-cd C:\soft\james_fast
-powershell -ExecutionPolicy Bypass -File start.ps1
+.\start.ps1
 ```
 The script will automatically:
 1. Launch Silo S3 storage on port `9000` in the background.
@@ -351,12 +349,12 @@ All 9 core components (`Guice`, `Postgres`, `Embedded ActiveMQ`, `ObjectStorage`
 ### 6.3. Running the SMTP High-Load Benchmark
 Execute the bundled stress test tool (5,000 messages across 16 parallel threads):
 ```powershell
-& "C:\soft\james_fast\soft\JRE_25\bin\java.exe" -cp tools SmtpHighLoadBenchmark 5000 16
+& ".\soft\JRE_25\bin\java.exe" -cp tools SmtpHighLoadBenchmark 5000 16
 ```
 
 ### 6.4. Graceful Server Shutdown
-To safely shut down the server, run [`stop.bat`](file:///C:/soft/james_fast/stop.bat) or execute:
+To safely shut down the server, run `stop.bat` or execute:
 ```powershell
-powershell -ExecutionPolicy Bypass -File stop.ps1
+.\stop.ps1
 ```
 The script drains any pending spool items, gracefully terminates the JVM, flushes PostgreSQL buffers via `pg_ctl stop -m smart`, and shuts down Silo S3.
