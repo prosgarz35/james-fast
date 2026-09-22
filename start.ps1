@@ -162,15 +162,15 @@ if (-not $javaProc) {
     # main pool is scaled for spooler threads (48 slots)
     $pgPropPath = "$JAMES_DIR\conf\postgres.properties"
     if (Test-Path $pgPropPath) {
-        $poolInitial = 48
         $pgProp = Get-Content $pgPropPath -Raw -Encoding UTF8
         $newPgProp = $pgProp
-        $newPgProp = $newPgProp -replace 'pool\.initial\.size=\d+', "pool.initial.size=$poolInitial"
-        $newPgProp = $newPgProp -replace 'pool\.max\.size=\d+', "pool.max.size=$mainPool"
-        $newPgProp = $newPgProp -replace 'by-pass-rls\.pool\.initial\.size=\d+', "by-pass-rls.pool.initial.size=$bypassPool"
-        $newPgProp = $newPgProp -replace 'by-pass-rls\.pool\.max\.size=\d+', "by-pass-rls.pool.max.size=$bypassPool"
+        $newPgProp = $newPgProp -replace 'pool(\.initial\.size|\.initialSize)=\d+', "pool.initialSize=$mainPool"
+        $newPgProp = $newPgProp -replace 'pool(\.max\.size|\.maxSize)=\d+', "pool.maxSize=$mainPool"
+        $newPgProp = $newPgProp -replace 'by-pass-rls\.pool(\.initial\.size|\.initialSize)=\d+', "by-pass-rls.pool.initialSize=$bypassPool"
+        $newPgProp = $newPgProp -replace 'by-pass-rls\.pool(\.max\.size|\.maxSize)=\d+', "by-pass-rls.pool.maxSize=$bypassPool"
         if ($newPgProp -ne $pgProp) {
-            Set-Content -Path $pgPropPath -Value $newPgProp -Encoding UTF8
+            $utf8NoBom = [System.Text.UTF8Encoding]::new($false)
+            [System.IO.File]::WriteAllText($pgPropPath, $newPgProp, $utf8NoBom)
         }
     }
 
